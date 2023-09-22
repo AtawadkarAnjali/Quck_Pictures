@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#C21858"
+        android:text="Generate Quick Pictures"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text_view"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:id="@+id/input_txt"
+            android:fontFamily="serif"
+            android:hint="Search here which pictures you want.."
+            android:padding="12dp"
+            android:textColorHint="#808080"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/generate_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="12dp"
+            android:backgroundTint="#C21858"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:text="GENERATE" />
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/pro_bar"
+            android:visibility="gone"
+            android:indeterminateTint="#E64A19"/>
+
+        <ImageView
+            android:layout_width="256dp"
+            android:layout_height="256dp"
+            android:id="@+id/img_view"
+            android:layout_marginTop="40dp"
+            android:src="#ACACAC"/>
+    </LinearLayout>
+
+</RelativeLayout>
